@@ -6,14 +6,15 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/HomeView.vue')
-    },
-    {
-      path: '/mougammadaly-but-2-stage/portfolio',
-      name: 'portfolio',
-      component: () => import('../views/PortfolioView.vue')
+      component: () => import('../views/PortfolioView.vue'),
+      meta: { title: 'Portfolio Stage BUT2 Informatique par Jessy MOUGAMMADALY' }
     }
   ]
+})
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title
+  next()
 })
 
 export default router
