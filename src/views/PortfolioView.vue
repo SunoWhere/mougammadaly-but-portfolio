@@ -34,7 +34,7 @@
             v-for="(item, index) in navItems"
             :key="index"
             :href="'#' + item.id"
-            class="text-xl font-semibold hover:text-zinc-400 hover:bg-zinc-700 rounded-lg p-2 text-zinc-500"
+            class="text-lg font-semibold hover:text-zinc-400 hover:bg-zinc-700 rounded-lg p-2 text-zinc-500"
             >{{ item.text }}</a
           >
         </div>

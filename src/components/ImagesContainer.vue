@@ -3,7 +3,7 @@
     <img
       @click="emits('onClickImage', props.image.path, props.image.alt)"
       class="rounded-lg hover:cursor-pointer"
-      :src="props.image.path"
+      :src="'/mougammadaly-but-portfolio/' + props.image.path"
       :alt="props.image.alt"
     />
     <div class="flex items-center justify-center">
